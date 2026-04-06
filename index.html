@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Simples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f2f2f2;
+      text-align: center;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 20px;
+    }
+
+    nav {
+      background: #ddd;
+      padding: 15px;
+    }
+
+    nav button {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      background: #444;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    nav button:hover {
+      background: #666;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    .pagina {
+      display: none;
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .ativa {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meu Site Simples</h1>
+    <p>Exemplo com 4 páginas</p>
+  </header>
+
+  <nav>
+    <button onclick="mostrarPagina('inicio')">Início</button>
+    <button onclick="mostrarPagina('sobre')">Sobre</button>
+    <button onclick="mostrarPagina('servicos')">Serviços</button>
+    <button onclick="mostrarPagina('contato')">Contato</button>
+  </nav>
+
+  <main>
+    <section id="inicio" class="pagina ativa">
+      <h2>Início</h2>
+      <p>Essa é a página inicial do site.</p>
+    </section>
+
+    <section id="sobre" class="pagina">
+      <h2>Sobre</h2>
+      <p>Aqui você pode falar um pouco sobre você ou seu projeto.</p>
+    </section>
+
+    <section id="servicos" class="pagina">
+      <h2>Serviços</h2>
+      <p>Aqui você pode mostrar os serviços que oferece.</p>
+    </section>
+
+    <section id="contato" class="pagina">
+      <h2>Contato</h2>
+      <p>Aqui você pode colocar e-mail, telefone ou redes sociais.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
